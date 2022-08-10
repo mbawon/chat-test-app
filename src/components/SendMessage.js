@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Input, Button } from 'antd'
 import { SendOutlined } from '@ant-design/icons'
 import { useDispatch, useSelector } from 'react-redux'
-import { addMessage } from '../slice/message'
+import { addMessage } from '../slice/message-slice'
 import { selectUser } from '../slice/auth-slice'
 
 export const SendMessage = () => {
