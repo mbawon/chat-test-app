@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { UserOutlined } from '@ant-design/icons';
 import { Avatar } from 'antd';
 import { useSelector } from 'react-redux'
-import { selectUser } from '../slice/auth';
+import { selectUser } from '../slice/auth-slice';
 
 export const ChatMessage = ({ senderId, message }) => {
 
