@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
-import { ChatPage } from './containers/ChatPage';
-import { Login } from './containers/Login';
-import { selectUser } from './slice/auth';
+import { ChatRoom } from './container/ChatRoom';
+import { Login } from './container/Login';
+import { selectUser } from './slice/auth-slice';
 
-export const App = () => {
+function App() {
 
   const [loggedIn, setLoggedIn] = useState(false)
 
@@ -13,10 +13,12 @@ export const App = () => {
   useEffect(() => {
     setLoggedIn(Object.keys(user).length > 0)
   }, [user])
-  
+
   return (
     <div>
-      {loggedIn ? <ChatPage /> : <Login />}
+      {loggedIn ? <ChatRoom /> : <Login />}
     </div>
   );
 }
+
+export default App
