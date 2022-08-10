@@ -1,0 +1,23 @@
+body {
+    overflow: hidden;
+}
+
+.chat-header {
+    height: 60px;
+    background: #1e1e24;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.header-title {
+    align-self: center;
+    font-size: 18px;
+}
+
+.chat-header Button {
+    align-self: center;
+}
