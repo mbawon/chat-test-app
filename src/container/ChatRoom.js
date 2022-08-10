@@ -17,11 +17,11 @@ export const ChatRoom = () => {
 
     useEffect(() => {
         dispatch(getMessages(pageSize))
-    }, [pageSize, dispatch])
+    }, [pageSize, dispatch]) // get all messages
 
     useEffect(() => {
         dummy.current.scrollIntoView({ behavior: 'smooth' });
-    }, [])
+    }, [])// scroll me to the bottom on page load
 
     const handleScroll = (e) => {
         if (e.currentTarget.scrollTop === 0) {
@@ -31,7 +31,7 @@ export const ChatRoom = () => {
                 setPageSize(pageSize + (25))
             }, 5000);
         }
-    }
+    }//scrol top to load more messages
 
     return (
         <div className='chat-page'>
