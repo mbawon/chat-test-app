@@ -21,3 +21,13 @@ body {
 .chat-header Button {
     align-self: center;
 }
+
+.send-message{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.send-message-button{
+    width: 200;
+    height: 100px;
+}
