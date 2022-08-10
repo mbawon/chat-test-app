@@ -31,3 +31,60 @@ body {
     width: 200;
     height: 100px;
 }
+
+p {
+    max-width: 250px;
+    margin-bottom: 12px;
+    line-height: 24px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    position: relative;
+    word-break: break-all;
+    color: white;
+    text-align: center;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+}
+
+.sent {
+    flex-direction: row-reverse;
+}
+
+.sent p {
+    color: white;
+    background: #0b93f6;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.received p {
+    background: #e5e5ea;
+    color: black;
+    text-align: left;
+}
+
+.chat-page{
+    display: flex;
+    flex-direction: column;
+}
+.chat-page section{
+    height: calc(100vh - 120px);
+    padding: 20px 15px;
+    overflow-y: auto;
+}
+
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
