@@ -18,15 +18,15 @@ export const Login = () => {
         const user = users.filter(user=>user.username.toLowerCase() === senderName.toLowerCase()) //get user details
         //check if user exist with the name provided
         if(user.length > 0){
-            const isUserActive = users.filter(user=>user.username.toLowerCase() === senderName.toLowerCase()) //check if active user exist with this name
-            if(isUserActive.length === 0){
+            // const isUserActive = users.filter(user=>user.username.toLowerCase() === senderName.toLowerCase()) //check if active user exist with this name
+            // if(isUserActive.length === 0){
                 dispatch(login(user[0])) // add user to the list loggedin users
-            }else{
-                setTimeout(() => {
-                    setPrompt("")
-                }, 5000);
-                setPrompt("There is an active user in the chat room with this name.")
-            }
+            // }else{
+            //     setTimeout(() => {
+            //         setPrompt("")
+            //     }, 5000);
+            //     setPrompt("There is an active user in the chat room with this name.")
+            // }
         }else{ //else
             const newUser = {} //initials an empty object and add user attributes
             newUser.userId = new Date().getTime()
