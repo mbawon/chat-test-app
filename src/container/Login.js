@@ -7,7 +7,7 @@ import { addUser, selectUsers } from '../slice/user-slice'
 export const Login = () => {
     const dispatch = useDispatch()
     const [senderName, setSenderName] = useState("")
-    const [prompt, setPrompt] = useState("")
+    // const [prompt, setPrompt] = useState("")
 
     const users = useSelector(selectUsers)
 
@@ -39,7 +39,7 @@ export const Login = () => {
     return (
         <div className="login">
             <form onSubmit={handleLogin}>
-                {prompt && <span>{prompt}</span>}
+                {/* {prompt && <span>{prompt}</span>} */}
                 <Input size="large" onChange={(e) => setSenderName(e.target.value)} />
                 
                 <Button onClick={handleLogin} type="primary" style={{width:"100%", marginTop:15}}>
