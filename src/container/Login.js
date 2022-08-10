@@ -1,8 +1,8 @@
 import { Button, Input } from 'antd'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { login } from '../slice/auth'
-import { addUser, selectUsers } from '../slice/user'
+import { login } from '../slice/auth-slice'
+import { addUser, selectUsers } from '../slice/user-slice'
 
 export const Login = () => {
     const dispatch = useDispatch()
@@ -11,7 +11,9 @@ export const Login = () => {
     const users = useSelector(selectUsers)
 
     const handleLogin = (e) => {
+
         e.preventDefault();
+
         const user = users.filter(user=>user.username.toLowerCase() === senderName.toLowerCase())
         if(user.length > 0){
             dispatch(login(user[0]))
