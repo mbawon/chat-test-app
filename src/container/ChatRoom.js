@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { ChatHeader } from '../components/ChatHeader'
 import { ChatMessage } from '../components/ChatMessage'
 import { SendMessage } from '../components/SendMessage'
-import { getMessages, selectPaginated } from '../slice/message'
+import { getMessages, selectPaginated } from '../slice/message-slice'
 
 export const ChatRoom = () => {
     const dispatch = useDispatch()
