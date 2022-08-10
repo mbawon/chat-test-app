@@ -65,3 +65,19 @@ p {
     color: black;
     text-align: left;
 }
+
+.chat-page{
+    display: flex;
+    flex-direction: column;
+}
+.chat-page section{
+    height: calc(100vh - 120px);
+    padding: 20px 15px;
+    overflow-y: auto;
+}
+
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
