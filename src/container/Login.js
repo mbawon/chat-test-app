@@ -40,7 +40,7 @@ export const Login = () => {
         <div className="login">
             <form onSubmit={handleLogin}>
                 {/* {prompt && <span>{prompt}</span>} */}
-                <Input size="large" onChange={(e) => setSenderName(e.target.value)} />
+                <Input size="large" placeholder='Username' onChange={(e) => setSenderName(e.target.value)} />
                 
                 <Button onClick={handleLogin} type="primary" style={{width:"100%", marginTop:15}}>
                     LOGIN
